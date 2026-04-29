@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Product Pages</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container mt-3 text-center bg-light p-5 rounded shadow  link-dark">
+            <h1>Our Products</h1>
+        </div>
+        <div class="container mt-2 mr-10 bg-light text-dark p-4 rounded shadow">
+            <p>We offer a wide range of products to our customers. Our products are designed to meet the needs of our customers and we are committed to providing the best possible products to our customers.</p>
+            <p>Our products include:</p>
+        </div>
+        <div class="container mt-2 mr-10 bg-light text-dark p-4 rounded shadow">
+            <ul>
+                <li>Product 1</li>
+                <li>Product 2</li>
+                <li>Product 3</li>
+                <li>Product 4</li>
+                <li>Product 5</li>
+            </ul>
+        </div>
+        <!-- calculator  -->
+        <div class="container mt-2 mr-10 bg-light text-dark p-4 rounded shadow">
+            <h2>Calculator</h2>
+            <input type="number" id="num1" placeholder="Enter first number">
+            <input type="number" id="num2" placeholder="Enter second number">
+            <button onclick="calculate()">Calculate</button>
+            <p id="result"></p>
+        </div>
+        <script>
+            function calculate() {
+                var num1 = parseFloat(document.getElementById('num1').value);
+                var num2 = parseFloat(document.getElementById('num2').value);
+                var result = num1 + num2;
+                document.getElementById('result').innerText = 'Result: ' + result;
+            }
+        </script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" async defer></script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
